@@ -26,4 +26,4 @@ In addition, this project will include:
 
 
 ## **Wireframes**
-![wireframes] (image/Homepage.png)
+![wireframes] (/Users/arwenkim/Desktop/JSProject/image/Homepage.png)
