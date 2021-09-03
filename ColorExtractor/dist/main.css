@@ -1,0 +1,28 @@
+html {
+  min-height: 100%;
+}
+
+h1 {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background: linear-gradient(#9787f0, #f4e1e1)
+}
+.right-nav {
+  display: flex;
+}
+
+.right-nav > li {
+  display: flex;
+  /* justify-content: space-between; */
+  color: white;
+  size: 150px;
+  position: relative;  
+
+}
