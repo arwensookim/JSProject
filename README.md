@@ -26,4 +26,5 @@ In addition, this project will include:
 
 
 ## **Wireframes**
-![wireframes] (/JSProject/image/Homepage.png)
+![Homepage](https://user-images.githubusercontent.com/64451087/131939704-1de4842e-ba54-4d23-a957-e12e5ea666a4.png)
+
