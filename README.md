@@ -52,3 +52,7 @@ In addition, this project will include:
 - **Wednesday:** Focus implementing manipulation. Make sure manipualation works properly only the part we selected with selected color.
 
 - **Thursday Morning:** Try wrap up everything and see everything works properly, and try to update proposal if anything new added or updated.
+
+
+
+# My repo is not showing my contribution!!!!!
