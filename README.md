@@ -1,5 +1,4 @@
-# JavaScript Project
-# Color Code Extraction
+# JavaScript Project - Color Code Extraction
 
 ---
 
