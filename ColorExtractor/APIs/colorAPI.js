@@ -1,10 +1,41 @@
-const ColorAPIUtil = {
-  newColorCodeAJAX: function() {
-    return $.ajax({
-      method: 'GET',
-      url: 'http://thecolorapi.com/id?hex=0047AB&rgb=0,71,171&hsl=215,100%,34%&cmyk=100,58,0,33&format=html'
-    });
-  }
-}
+const colorPicker = document.querySelector('.selected');
 
-export default ColorAPIUtil;
+colorPicker.addEventListener('click', function() {
+  const reqOBj = {
+    method: 'GET',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    'mode': 'cors'
+  };
+
+  const url = 'http://thecolorapi.com/id?hex=0047AB&rgb=0,71,171&hsl=215,100%,34%&cmyk=100,58,0,33&format=html';
+  
+  fetch(url, reqOBj)
+    .then(function(res) {
+      return res.json();
+    })
+    .then(function(jsonRes) {
+      console.log('get response :: ', jsonRes);
+    });
+})
+
+// let ColorAPIUtil = {
+//   method: 'GET',
+//   headers: {
+//     'Content-type': 'application/json'
+//   },
+//   'mode':'cors'
+// };
+// let url = 'http://thecolorapi.com/id?hex=0047AB&rgb=0,71,171&hsl=215,100%,34%&cmyk=100,58,0,33&format=html';
+
+// fetch(url, ColorAPIUtil).then(function(res) {
+//   console.log(res);
+// });
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const allColorCode = fetch('http://thecolorapi.com/id?hex=0047AB&rgb=0,71,171&hsl=215,100%,34%&cmyk=100,58,0,33&format=html');
+//   allColorCode.then(res => res.json())
+//   .then(data => console.log(data));
+// });
