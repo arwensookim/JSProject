@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./dist/main.css" />
-  <script src="./dist/main.js"></script>
-  <title>Master in EVERYTHING!</title>
+  <title>Color Picker</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@1,300&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
@@ -34,13 +33,21 @@
 
   <div class="container">
     <canvas id="color-picker"></canvas>
+
     <div class="info">
       <h4>Selected Color</h4>
       <div class="selected"></div>
     </div>
 
   </div>
+  <div class="upload">
+    <form method="post" enctype="multipart/form-data">
+      <input type="file">
+      <input type="submit">
+    </form>
+  </div>
 
-  <script src="./APIs/colorAPI.js"></script>
+
+  <script src="./dist/main.js"></script>
 </body>
 </html>
