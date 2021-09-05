@@ -14,11 +14,12 @@ h1 {
 
   font-weight: bolder;
   color: rgb(255, 255, 255);
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 body {
-  background: linear-gradient(#9787f0, #f4e1e1);
+  background: linear-gradient(#39393f, #c6d8da);
   font-family: 'Lobster', cursive;
 
 }

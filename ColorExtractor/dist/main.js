@@ -11,7 +11,7 @@ colorPicker.addEventListener('click', function() {
     'mode': 'no-cors'
   };
 
-  const url = 'https://www.thecolorapi.com/id?format=html&hex=281BAD';
+  const url = 'https://www.thecolorapi.com/scheme?hex=0047AB';
 
   fetch(url)
     .then(function(res) {
@@ -27,3 +27,7 @@ colorPicker.addEventListener('click', function() {
     //   console.log(error);
     // });
   });
+
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   let trigger = new ScrollTrigger();
+  // });
