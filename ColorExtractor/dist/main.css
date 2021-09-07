@@ -1,3 +1,6 @@
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
 html, body {
   min-height: 100%;
   width: 95%;
@@ -11,18 +14,17 @@ h1 {
   width: 500px;
   margin: 0 auto;
   text-align: center;
-
   font-weight: bolder;
-  color: rgb(255, 255, 255);
+  color: white;
   padding-top: 80px;
   padding-bottom: 50px;
 }
 
 body {
   background: linear-gradient(#39393f, #c6d8da);
-  font-family: 'Lobster', cursive;
-
+  font-family: "Lobster", cursive;
 }
+
 .main-nav {
   display: flex;
   width: 100%;
@@ -30,15 +32,12 @@ body {
   justify-content: space-between;
   margin-left: 100px;
   margin-right: 100px;
-
 }
 
 .right-nav > i {
   justify-content: space-between;
   color: white;
   size: 150px;
-  
-  
 }
 
 .right-nav > i:hover {
@@ -55,7 +54,6 @@ body {
   color: white;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 #color-picker {
@@ -65,8 +63,6 @@ body {
   align-items: baseline;
   /* padding-top: 150px; */
 }
-
-
 
 .info {
   width: 12em;
@@ -85,7 +81,7 @@ body {
   align-items: center;
 }
 
-.selected:hover{
+.selected:hover {
   cursor: pointer;
 }
 
@@ -93,4 +89,3 @@ body {
   padding-top: 50px;
   align-items: flex-start;
 }
-

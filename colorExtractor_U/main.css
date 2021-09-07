@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Lobster', cursive;
+  line-height: 1.5;
+}
+body {
+  min-height: 100vh;
+  /* background-color: #222; */
+  color: #eee;
+  background: linear-gradient(#39393f, #c6d8da);
+
+}
+header,
+main,
+footer {
+  /* background-color: #333; */
+  width: 90vw;
+  min-height: 100vh;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+/* header h1 {
+  color: orange;
+}
+header h2 {
+  color: orangered;
+} */
+p {
+  line-height: 1.7;
+  margin: 1.5rem 0;
+}
+
+h1 {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  font-size: 60px;
+}
+
+.main-nav {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+.right-nav > i {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px;
+  color: white;
+  size: 500px;
+}
+
+.right-nav > i:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.left-nav > i:hover{
+  cursor: pointer;
+  background-color: gray;
+}
+
+main p canvas {
+  border: 1px solid white;
+}
+
+.selected {
+  width: 70px;
+  height: 70%;
+  border: 1px solid white;
+  align-items: center;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #fff;
+  display: inline-block;
+  /* background-color: attr('data-color'); */
+  position: relative;
+  margin: 5px;
+}
+
+.box::before {
+  color: #fff;
+  font-size: 0.8rem;
+  content: attr(data-label);
+  position: absolute;
+  width: 150px;
+  top: 5px;
+  left: 5px;
+}
+.box::after {
+  color: #fff;
+  font-size: 0.8rem;
+  content: attr(data-color);
+  position: absolute;
+  width: 150px;
+  bottom: 5px;
+  left: 5px;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <title>Color Tool</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <main>
+      <nav class="main-nav">
+        <ul class="left-nav">
+          <i class="fa fa-home fa-2x"></i>
+        </ul>
+
+        <ul class="right-nav">
+          <i class="fab fa-github fa-2x"></i>
+          <i class="fa fa-bars fa-2x"></i>
+        </ul>
+      </nav>
+    
+    <section class="middle-section">
+      <h1>Color Extraction Tool</h1>
+      <p>
+        <span class="box" id="pixelColor" data-label="Current Pixel"></span>
+        <!-- images are from pexels.com -->
+        <canvas data-src="./img/img1.png" width="900"></canvas>
+      </p>
+
+      <div class="info">
+        <div class="selected"></div>
+      </div>
+    </section>
+
+      <section class="colors">
+        <!-- saved colours here -->
+      </section>
+      <div class="upload">
+        <form method="post" enctype="multipart/form-data">
+          <input type="file">
+          <input type="submit">
+        </form>
+      </div>
+    </main>
+    <script src="main.js" defer></script>
+  </body>
+
+</html>
