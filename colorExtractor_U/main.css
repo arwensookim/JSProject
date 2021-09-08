@@ -126,3 +126,8 @@ main p canvas {
   height: 500px;
   width: 900px;
 }
+
+.upload > i:hover{
+  /* color: rgb(12, 11, 11); */
+  cursor: pointer;
+}

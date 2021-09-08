@@ -29,6 +29,7 @@ const APP = {
         APP.canvas.height
       );
       APP.data = imgDataObj.data; //data prop is an array
+      // APP.addBox(e)
       // console.log(APP.data.length, 900 * 600 * 4); //  has 2,160,000 elements
       APP.canvas.addEventListener('mousemove', APP.getPixel);
       APP.canvas.addEventListener('click', APP.addBox);
@@ -51,7 +52,7 @@ const APP = {
     APP.getAverage(ev);
   },
   getAverage(ev) {
-    //create a 41px by 41px average colour square
+
     //replace everything in the canvas with the original image
     // let canvas = ev.target;
     let cols = APP.canvas.width;
@@ -68,7 +69,7 @@ const APP = {
     offsetX = Math.max(inset, offsetX);
     offsetY = Math.min(offsetY, rows - inset);
     offsetY = Math.max(offsetY, inset);
-    //create a 41 x 41 pixel square for the average
+
     let reds = 0; //total for all the red values in the 41x41 square
     let greens = 0;
     let blues = 0;
