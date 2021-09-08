@@ -63,7 +63,7 @@ h1 {
 
 }
 
-.right-nav > i {
+.right-nav > a {
   justify-content: space-between;
   align-items: flex-start;
   margin: 10px;
@@ -71,9 +71,9 @@ h1 {
   size: 500px;
 }
 
-.right-nav > i:hover {
+.right-nav > a:hover {
   cursor: pointer;
-  background-color: gray;
+  /* background-color: gray; */
 }
 
 .left-nav > i:hover{
@@ -96,6 +96,7 @@ main p canvas {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* position: relative; */
 }
 
 .box {
@@ -106,6 +107,7 @@ main p canvas {
   /* background-color: attr('data-color'); */
   position: relative;
   margin: 5px;
+  min-width: 150px;
 }
 
 .box::before {
@@ -131,6 +133,13 @@ main p canvas {
   height: 500px;
   width: 900px;
 }
+
+.upload form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 
 .upload > i:hover{
   /* color: rgb(12, 11, 11); */
