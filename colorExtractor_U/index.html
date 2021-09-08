@@ -24,9 +24,9 @@
           <i class="fa fa-bars fa-2x"></i>
         </ul>
       </nav>
-    
-    <section class="middle-section">
+      
       <h1>Color Extraction Tool</h1>
+    <section class="mains">
       <p>
         <span class="box" id="pixelColor" data-label="Current Pixel"></span>
         <!-- images are from pexels.com -->
@@ -43,11 +43,19 @@
       </section>
       <div class="upload">
         <form method="post" enctype="multipart/form-data">
-          <input type="file">
-          <input type="submit">
+          <input type="file" onchange="loadfile(event)">
+          <!-- <input type="submit"> -->
         </form>
       </div>
     </main>
+    <script>
+      const loadfile = function(event) {
+        let imgTag = document.querySelector('main canvas');
+        let picURL = URL.createObjectURL(event.target.files[0]);
+        imgTag.dataset.src = picURL;
+        APP.init();
+      }
+    </script>
     <script src="main.js" defer></script>
   </body>
 

@@ -88,7 +88,7 @@ main p canvas {
   align-items: center;
 }
 
-.main-section {
+.mains {
   display: flex;
   justify-content: space-between;
 }
@@ -122,3 +122,7 @@ main p canvas {
   left: 5px;
 }
 
+#imagePreview {
+  height: 500px;
+  width: 900px;
+}

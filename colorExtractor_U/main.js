@@ -11,10 +11,16 @@ const APP = {
     APP.canvas.height = 600;
     APP.canvas.style.height = 600;
     APP.img = document.createElement('img');
+    APP.img.id = 'imagePreview';
     APP.img.src = APP.canvas.getAttribute('data-src');
-    //once the image is loaded, add it to the canvas
+    console.log(APP.img);
+    // APP.ctx.drawImage(APP.img, 0, 0, APP.img.width * .3, APP.img.height * .3);
+    // APP.img.style.height = "500px";
+    // APP.img.style.width = "900px";
+    APP.img.style.objectFit = "contain";
+    // once the image is loaded, add it to the canvas
     APP.img.onload = (ev) => {
-      APP.ctx.drawImage(APP.img, 0, 0);
+      APP.ctx.drawImage(APP.img, 0, 0, APP.canvas.width, APP.canvas.height);
       //call the context.getImageData method to get the array of [r,g,b,a] values
       let imgDataObj = APP.ctx.getImageData(
         0,
@@ -29,7 +35,7 @@ const APP = {
     };
   },
   getPixel(ev) {
-
+    // APP.ctx.drawImage(APP.img, 0, 0, APP.img.width * .3, APP.img.height * .3);
     // let canvas = ev.target;
     let cols = APP.canvas.width;
     // let rows = canvas.height;
@@ -53,7 +59,8 @@ const APP = {
     //remove the current contents of the canvas to draw the image and box again
     APP.ctx.clearRect(0, 0, cols, rows);
     //add the image from memory
-    APP.ctx.drawImage(APP.img, 0, 0);
+    // APP.ctx.drawImage(APP.img, 0, 0);
+    APP.ctx.drawImage(APP.img, 0, 0, APP.canvas.width, APP.canvas.height);
     let { offsetX, offsetY } = ev;
     const inset = 20;
     //inset by 20px as our workable range
