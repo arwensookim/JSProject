@@ -1,3 +1,4 @@
+
 const APP = {
   canvas: null,
   ctx: null,
@@ -13,7 +14,7 @@ const APP = {
     APP.img = document.createElement('img');
     APP.img.id = 'imagePreview';
     APP.img.src = APP.canvas.getAttribute('data-src');
-    console.log(APP.img);
+    // console.log(APP.img);
     // APP.ctx.drawImage(APP.img, 0, 0, APP.img.width * .3, APP.img.height * .3);
     // APP.img.style.height = "500px";
     // APP.img.style.width = "900px";
@@ -34,6 +35,7 @@ const APP = {
       APP.canvas.addEventListener('mousemove', APP.getPixel);
       APP.canvas.addEventListener('click', APP.addBox);
     };
+  
   },
   getPixel(ev) {
     // APP.ctx.drawImage(APP.img, 0, 0, APP.img.width * .3, APP.img.height * .3);
@@ -45,7 +47,7 @@ const APP = {
     let c = APP.getPixelColor(cols, offsetY, offsetX);
     //build a colour string for css
     let clr = `rgb(${c.red}, ${c.green}, ${c.blue})`; //${c.alpha / 255}
-    document.getElementById('pixelColor').style.backgroundColor = clr;
+    // document.getElementById('pixelColor').style.backgroundColor = clr;
     //save the string to use elsewhere
     APP.pixel = clr;
     //now get the average of the surrounding pixel colours
@@ -126,11 +128,29 @@ const APP = {
     average.style.backgroundColor = APP.average;
     // colours.append(pixel, average);
     colors.append(pixel);
+  
   },
-};
 
+
+  
+}
+
+  // const img = document.getElementById('imagePreview')
+  const chooseFile = document.getElementById('filename');
+   chooseFile.addEventListener('click', ()=> {
+    const boxes = document.querySelectorAll('.box');
+    console.log(boxes);
+    boxes.forEach((box) => {
+      box.remove();
+    })
+  });
+
+
+const Graph = {
+  init() {
+    Graph.canvas = document.getElementById('selected');
+  }
+}
+  
 document.addEventListener('DOMContentLoaded', APP.init);
-
-// window.onload = function() {
-//   App.init();
-// }
+// document.addEventListener('DOMContetLoaded', Graph.init);
