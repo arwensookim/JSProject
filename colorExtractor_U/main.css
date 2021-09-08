@@ -8,9 +8,12 @@
 html {
   font-size: 20px;
   font-weight: 300;
-  font-family: 'Lobster', cursive;
   line-height: 1.5;
+  width: fit-content;
+  height: fit-content;
 }
+
+
 body {
   min-height: 100vh;
   /* background-color: #222; */
@@ -47,6 +50,7 @@ h1 {
   padding-top: 80px;
   padding-bottom: 30px;
   font-size: 60px;
+  font-family: 'Lobster', cursive;
 }
 
 .main-nav {
@@ -91,6 +95,7 @@ main p canvas {
 .mains {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .box {
@@ -131,3 +136,5 @@ main p canvas {
   /* color: rgb(12, 11, 11); */
   cursor: pointer;
 }
+
+

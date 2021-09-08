@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <title>Color Tool</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="colorSpectrum.css" />
   </head>
 
   <body>
@@ -20,22 +21,37 @@
         </ul>
 
         <ul class="right-nav">
-          <i class="fab fa-github fa-2x"></i>
-          <i class="fa fa-bars fa-2x"></i>
+          <a href="https://github.com/arwensookim"><i class="fab fa-github fa-2x"></i></a>
+          <!-- <i class="fa fa-bars fa-2x"></i> -->
         </ul>
       </nav>
       
       <h1>Color Extraction Tool</h1>
     <section class="mains">
-      <p>
+      <br>
         <span class="box" id="pixelColor" data-label="Current Pixel"></span>
         <!-- images are from pexels.com -->
         <canvas data-src="./img/img1.png" width="900"></canvas>
+
+        <div class="spectrum-wrapper">
+          <!-- <input type="color" id="color" ></input> -->
+          <div class="spectrum-layer"></div>
+          <div class="saturation-white"></div>
+          <div class="saturation-black"></div>
+        </div>
+      </br>
+        
+
+        <div class="info">
+          <!-- <div>Red: <span class="red"></span></div>
+          <div>Green: <span class="green"></span></div>
+          <div>Blue: <span class="blue"></span></div>  -->
+
+          <div>Hex: <span class="hex"></span></div>
+        </div>
       </p>
 
-      <div class="info">
-        <canvas class="selected"></canvas>
-      </div>
+
     </section>
 
       <section class="colors">
@@ -56,6 +72,7 @@
       }
     </script>
     <script src="main.js" defer></script>
+    <script src="colorSpectrum.js" defer></script>
 
   </body>
 

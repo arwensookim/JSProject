@@ -131,26 +131,28 @@ const APP = {
   
   },
 
+  // manipulate(ev) {
+  //   let selectedPixel = pixel;
+
+
+  // }
 
   
 }
 
   // const img = document.getElementById('imagePreview')
-  const chooseFile = document.getElementById('filename');
-   chooseFile.addEventListener('click', ()=> {
-    const boxes = document.querySelectorAll('.box');
-    console.log(boxes);
-    boxes.forEach((box) => {
-      box.remove();
-    })
-  });
+  // const chooseFile = document.getElementById('filename');
+  //  chooseFile.addEventListener('click', ()=> {
+  //   const boxes = document.querySelectorAll('.box');
+  //   console.log(boxes);
+  //   boxes.forEach((box) => {
+  //     box.remove();
+  //   })
+  // });
 
 
-const Graph = {
-  init() {
-    Graph.canvas = document.getElementById('selected');
-  }
-}
+  
+
   
 document.addEventListener('DOMContentLoaded', APP.init);
 // document.addEventListener('DOMContetLoaded', Graph.init);
