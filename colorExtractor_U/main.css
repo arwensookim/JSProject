@@ -97,11 +97,12 @@ h1 {
   position: absolute;
   z-index: 1;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -200px;
   opacity: 0;
   transition: opacity 0.3s;
-  font-size: medium;
-  width: 180px;
+  font-size: large;
+  width: 300px;
+  /* min-width: 250px; */
 }
 
 #tooltip .tooltiptext::after {
