@@ -1,3 +1,5 @@
+
+
 const getSpectrumWrapper = () => document.querySelector(".spectrum-wrapper");
 
   const spectrumRanges = [
@@ -74,8 +76,10 @@ const getSpectrumWrapper = () => document.querySelector(".spectrum-wrapper");
     const rgb = findRgbFromMousePosition(e);
     const { r, g, b } = saturate(rgb, e);
     const hexValue = rgbToHex(r, g, b);
-    // document.querySelector(".red").innerText = r;
-    // document.querySelector(".green").innerText = g;
-    // document.querySelector(".blue").innerText = b;
+    document.querySelector(".red").innerText = r;
+    document.querySelector(".green").innerText = g;
+    document.querySelector(".blue").innerText = b;
     document.querySelector(".hex").innerText = hexValue;
   });
+
+  // module.exports = colorspectrum;

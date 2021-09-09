@@ -1,3 +1,5 @@
+// import getSpectrumWrapper from "./colorSpectrum.js";
+
 
 const APP = {
   canvas: null,
@@ -35,6 +37,7 @@ const APP = {
       APP.canvas.addEventListener('mousemove', APP.getPixel);
       APP.canvas.addEventListener('click', APP.addBox);
     };
+    APP.img.manipulate();
   
   },
   getPixel(ev) {
@@ -131,11 +134,25 @@ const APP = {
   
   },
 
-  // manipulate(ev) {
-  //   let selectedPixel = pixel;
+  
 
+  manipulate() {
+    let selectedPixel = ctx.getImageData(0,0, this.canvas.width, this.canvas.height)
+    // selectedPixel 
+    getSpectrumWrapper().addEventListener("click", (e) => {
+      const rgb = findRgbFromMousePosition(e);
+      const { r, g, b } = saturate(rgb, e);
+      const hexValue = rgbToHex(r, g, b);
+      document.querySelector(".red").innerText = r;
+      document.querySelector(".green").innerText = g;
+      document.querySelector(".blue").innerText = b;
+      document.querySelector(".hex").innerText = hexValue;
+    });
+    
+  
+    
 
-  // }
+  }
 
   
 }
