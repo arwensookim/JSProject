@@ -35,9 +35,9 @@ const APP = {
       // APP.addBox(e)
       // console.log(APP.data.length, 900 * 600 * 4); //  has 2,160,000 elements
       APP.canvas.addEventListener('mousemove', APP.getPixel);
-      APP.canvas.addEventListener('click', APP.addBox);
+      APP.canvas.addEventListener('click', APP.addBox, APP.manipulate);
     };
-    APP.img.manipulate();
+   
   
   },
   getPixel(ev) {
@@ -138,21 +138,21 @@ const APP = {
 
   manipulate() {
     let selectedPixel = ctx.getImageData(0,0, this.canvas.width, this.canvas.height)
-    // selectedPixel 
-    getSpectrumWrapper().addEventListener("click", (e) => {
-      const rgb = findRgbFromMousePosition(e);
-      const { r, g, b } = saturate(rgb, e);
-      const hexValue = rgbToHex(r, g, b);
-      document.querySelector(".red").innerText = r;
-      document.querySelector(".green").innerText = g;
-      document.querySelector(".blue").innerText = b;
-      document.querySelector(".hex").innerText = hexValue;
-    });
+    let pixel = document.getElementsByTagName('span')
+    let pixelColor = pixel.getAttribute('data-color');
+    console.log(selectedPixel);
     
-  
-    
-
-  }
+    // const scannedData = scannedPixel.data;
+    // for (let i = 0; i < scannedPixel.length; i += 4) {
+    //   const total = scannedData[i] + scannedData[i+1] + scannedData[i+2];
+    //   // const averageColorValue = total / 3;
+    //   scannedData[i] = red;
+    //   scannedData[i + 1] = green;
+    //   scannedData[i + 2] = blue;
+    // }
+    // scannedImage.data = scannedData;
+    // APP.ctx.putImageData(scannedImage, 0, 0);
+    }
 
   
 }
