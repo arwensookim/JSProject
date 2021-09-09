@@ -63,7 +63,7 @@ h1 {
 
 }
 
-.right-nav > a {
+.right-nav > a,i  {
   justify-content: space-between;
   align-items: flex-start;
   margin: 10px;
@@ -76,13 +76,54 @@ h1 {
   /* background-color: gray; */
 }
 
-.left-nav > i:hover{
+.right-nav > i:hover{
   cursor: pointer;
-  background-color: gray;
+
+  /* background-color: gray; */
 }
+
+#tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+#tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: medium;
+}
+
+#tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 main p canvas {
   border: 1px solid white;
+  
 }
 
 .selected {
@@ -97,6 +138,7 @@ main p canvas {
   justify-content: space-between;
   align-items: center;
   /* position: relative; */
+  margin-bottom: 20px;
 }
 
 .box {

@@ -130,8 +130,8 @@ const APP = {
 
     pixel.style.backgroundColor = APP.pixel;
     average.style.backgroundColor = APP.average;
-    // colours.append(pixel, average);
-    colors.append(pixel);
+    colors.append(pixel, average);
+    // colors.append(pixel);
   
   },
 

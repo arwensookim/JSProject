@@ -17,19 +17,28 @@
     <main>
       <nav class="main-nav">
         <ul class="left-nav">
-          <i class="fa fa-home fa-2x"></i>
+          <!-- <i class="fa fa-home fa-2x"></i> -->
         </ul>
 
         <ul class="right-nav">
           <a href="https://github.com/arwensookim"><i class="fab fa-github fa-2x"></i></a>
           <!-- <i class="fa fa-bars fa-2x"></i> -->
+          <i class="fas fa-info-circle fa-2x" id="tooltip">
+            <span class="tooltiptext">Upload your picture and get color information from your picture!</span>
+          </i>
+          <!-- <script>
+            function mouseOver() {
+              // let icon = document.getElementsByTagName('i');
+              alert("Upload your picture to get color information from your picture!")
+            }
+          </script> -->
         </ul>
       </nav>
       
       <h1>Color Extraction Tool</h1>
     <section class="mains">
       <br>
-        <span class="box" id="pixelColor" data-label="Current Pixel"></span>
+        <!-- <span class="box" id="pixelColor" data-label="Current Pixel"></span> -->
         <!-- images are from pexels.com -->
         <canvas data-src="./img/img1.png" width="900"></canvas>
 
