@@ -40,6 +40,7 @@
       <br>
         <!-- <span class="box" id="pixelColor" data-label="Current Pixel"></span> -->
         <!-- images are from pexels.com -->
+ 
         <canvas data-src="./img/img1.png" width="900"></canvas>
 
         <div class="spectrum-wrapper">
@@ -51,7 +52,6 @@
             <div>Red: <span class="red"></span></div>
             <div>Green: <span class="green"></span></div>
             <div>Blue: <span class="blue"></span></div> 
-    
             <div>Hex: <span class="hex"></span></div>
           </div>
         </div>
@@ -67,8 +67,8 @@
         <!-- saved colours here -->
       </section>
       <div class="upload">
-        <form method="post" enctype="multipart/form-data">
-          <input type="file" id ="filename" onchange="loadfile(event)">
+        <form class="file-upload" method="post" enctype="multipart/form-data">
+          <input class="file-upload" type="file" id ="filename" onchange="loadfile(event)">
         </form>
       </div>
     </main>

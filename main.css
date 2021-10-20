@@ -181,6 +181,9 @@ main p canvas {
   align-items: center;
   display: flex;
   justify-content: center;
+  width: 500px;
+  color: #39393f;
+
 }
 
 
@@ -189,4 +192,7 @@ main p canvas {
   cursor: pointer;
 }
 
-
+.file-upload button {
+  text-decoration: none;
+  border-radius: 5px;
+}
