@@ -1,7 +1,7 @@
 # JavaScript Project - Color Code Extraction
 
 ---
-
+Clink [here](https://arwensookim.github.io/JSProject/) for live demo
 
 ## **Background**
 
