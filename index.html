@@ -9,77 +9,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <title>Color Tool</title>
+    <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="main.css" />
+    <!-- <link rel="stylesheet" href="newcss.css" /> -->
     <link rel="stylesheet" href="colorSpectrum.css" />
   </head>
 
   <body>
-    <main>
-      <nav class="main-nav">
-        <ul class="left-nav">
-          <!-- <i class="fa fa-home fa-2x"></i> -->
-        </ul>
-
-        <ul class="right-nav">
-          <i class="fas fa-info-circle fa-2x" id="tooltip">
-            <span class="tooltiptext">Upload your picture and get color information from your picture!</span>
-          </i>
-          <div class="dropdown" style="float: right;">
+      <div class="main-nav">
+        <!-- <div class="left-nav"> -->
+          <div class="dropdown">
             <i class="fas fa-bars fa-2x"></i>
             <div class="dropdown-content">
-              <a href="https://github.com/arwensookim"><i class="fab fa-github fa-2x"></i>github</a>
-              <a href="https://www.linkedin.com/in/arwen-kim-85a01b221/"><i class="fab fa-linkedin fa-2x"></i>linkedin</a>
-              <a href="https://angel.co/u/arwen-kim" ><i class="fab fa-angellist fa-2x"></i>angelist</a>
+              <a href="https://github.com/arwensookim" target="_blank"><i class="fab fa-github fa-2x"></i>github</a>
+              <a href="https://www.linkedin.com/in/arwen-kim-85a01b221/" target="_blank"><i class="fab fa-linkedin fa-2x"></i>linkedin</a>
+              <a href="https://angel.co/u/arwen-kim" ><i class="fab fa-angellist fa-2x" target="_blank"></i>angelist</a>
             </div>
           </div>
-          <!-- <i class="fa fa-bars fa-2x"></i> -->
-          <!-- <script>
-            function mouseOver() {
-              // let icon = document.getElementsByTagName('i');
-              alert("Upload your picture to get color information from your picture!")
-            }
-          </script> -->
-        </ul>
-      </nav>
+        <!-- </div> -->
+        <!-- <div class="title"> -->
+          Color Picker
+        <!-- </div> -->
       
-      <h1>Color Picker</h1>
-    <section class="mains">
+        <!-- <div class="right-nav"> -->
+          <ul>
+            <i class="fas fa-info-circle fa-2x" id="tooltip">
+              <span class="tooltiptext">Upload your picture and get color information from your picture!</span>
+            </i>
+          </ul>
+        <!-- </div> -->
+      </div>
+
+  <main>
+    <div class="mains">
       <br>
         <!-- <span class="box" id="pixelColor" data-label="Current Pixel"></span> -->
         <!-- images are from pexels.com -->
  
-        <div class="canvas-box">
+        <div class="container">
+          <div class="canvas-box">
             <canvas data-src="./img/img1.png" width="900"></canvas>
-        </div>
+          </div>
 
-        <div class="spectrum-wrapper">
-          <!-- <input type="color" id="color" ></input> -->
-          <div class="spectrum-layer"></div>
-          <div class="saturation-white"></div>
-          <div class="saturation-black"></div>
-          <div class="info">
-            <div>Red: <span class="red"></span></div>
-            <div>Green: <span class="green"></span></div>
-            <div>Blue: <span class="blue"></span></div> 
-            <div>Hex: <span class="hex"></span></div>
+          <div class="spectrum-wrapper">
+            <!-- <input type="color" id="color" ></input> -->
+            <div class="spectrum-layer"></div>
+            <div class="saturation-white"></div>
+            <div class="saturation-black"></div>
+            <div class="info">
+              <div>Red: <span class="red"></span></div>
+              <div>Green: <span class="green"></span></div>
+              <div>Blue: <span class="blue"></span></div> 
+              <div>Hex: <span class="hex"></span></div>
+            </div>
           </div>
         </div>
+
       </br>
-        
-
-      </p>
-
-
-    </section>
-
-      <section class="colors">
-        <!-- saved colours here -->
-      </section>
       <div class="upload">
         <form class="file-upload" method="post" enctype="multipart/form-data">
           <input class="file-upload" type="file" id ="filename" onchange="loadfile(event)">
         </form>
       </div>
+
+      <section class="colors">
+        <!-- saved colours here -->
+      </section>
+
+    </div>
+
     </main>
     <script>
       const loadfile = function(event) {
