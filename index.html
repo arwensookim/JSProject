@@ -21,11 +21,18 @@
         </ul>
 
         <ul class="right-nav">
-          <a href="https://github.com/arwensookim"><i class="fab fa-github fa-2x"></i></a>
-          <!-- <i class="fa fa-bars fa-2x"></i> -->
           <i class="fas fa-info-circle fa-2x" id="tooltip">
             <span class="tooltiptext">Upload your picture and get color information from your picture!</span>
           </i>
+          <div class="dropdown" style="float: right;">
+            <i class="fas fa-bars fa-2x"></i>
+            <div class="dropdown-content">
+              <a href="https://github.com/arwensookim"><i class="fab fa-github fa-2x"></i>github</a>
+              <a href="https://www.linkedin.com/in/arwen-kim-85a01b221/"><i class="fab fa-linkedin fa-2x"></i>linkedin</a>
+              <a href="https://angel.co/u/arwen-kim" ><i class="fab fa-angellist fa-2x"></i>angelist</a>
+            </div>
+          </div>
+          <!-- <i class="fa fa-bars fa-2x"></i> -->
           <!-- <script>
             function mouseOver() {
               // let icon = document.getElementsByTagName('i');
@@ -41,7 +48,9 @@
         <!-- <span class="box" id="pixelColor" data-label="Current Pixel"></span> -->
         <!-- images are from pexels.com -->
  
-        <canvas data-src="./img/img1.png" width="900"></canvas>
+        <div class="canvas-box">
+            <canvas data-src="./img/img1.png" width="900"></canvas>
+        </div>
 
         <div class="spectrum-wrapper">
           <!-- <input type="color" id="color" ></input> -->

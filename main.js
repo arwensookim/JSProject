@@ -1,4 +1,3 @@
-// import {getSpectrumWrapper} from "./colorSpectrum.js";
 
 
 const APP = {
