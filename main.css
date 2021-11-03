@@ -1,39 +1,29 @@
-*,
+/* *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-/* html {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.5;
-  width: 100vw;
-  height: 100vh;
 } */
 
 
+
 body {
-  /* max-width: 100%;
-  min-height: 100vh;
-  background-color: #222; */
   color: #eee;
   background: #404041;
-  /* margin: auto; */
-  /* padding: 10px; */
+
 }
 
-header,
+/* header,
 main,
 footer {
   width: 90vw;
   min-height: 100vh;
-}
+} */
 
-main {
+/* main {
   margin: 0;
-}
+} */
 
 
 .dropdown {
@@ -43,15 +33,15 @@ main {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  background-color: #39393f;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 260px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 2;
+  min-width: 150px;
+  box-shadow: 0px 5px 5px 0px rgba(199, 199, 199, 0.2);
+
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -63,9 +53,12 @@ main {
   display: block;
   text-transform: uppercase;
   font-size: 20px;
+  padding: 5px 0px 5px 0px;
+  align-content: center;
+  font-family: 'Concert One', cursive;
 }
-.dropdown-content > .fab{
-  padding-right: 5px;
+.dropdown-content > a > .fab{
+  padding-right: 10px;
 }
 .main-nav {
   display: flex;
@@ -73,14 +66,17 @@ main {
   height: 30px;
   justify-content: space-between;
   color: white;
-  padding-bottom: 150px;
+  padding: 15px 15px 150px 15px;
+
 }
 
 .title {
+  padding-top: 10px;
   font-size: 50px;
+  font-family: 'Concert One', cursive;
 }
 
-.right-nav > a,i  {
+.right-nav > i  {
   justify-content: space-between;
   align-items: flex-start;
   margin: 10px;
@@ -89,7 +85,7 @@ main {
   margin-right: 30px;
 }
 
-.right-nav > a:hover {
+.left-nav > a:hover {
   cursor: pointer;
   /* background-color: gray; */
 }
@@ -174,7 +170,6 @@ main p canvas {
   height: 150px;
   border: 1px solid #fff;
   display: inline-block;
-  /* background-color: attr('data-color'); */
   position: relative;
   margin: 5px;
   min-width: 150px;
@@ -221,6 +216,6 @@ main p canvas {
 
 .upload > .file-upload {
   text-decoration: none;
-  border-radius: 5px;
-  color: #39393f;
+  border-radius: 10px;
+  color: #ffffff;
 }
