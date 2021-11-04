@@ -53,7 +53,7 @@ footer {
   display: block;
   text-transform: uppercase;
   font-size: 20px;
-  padding: 5px 0px 5px 0px;
+  padding: 5px 0px 5px 12px;
   align-content: center;
   font-family: 'Concert One', cursive;
 }
@@ -63,7 +63,7 @@ footer {
 .main-nav {
   display: flex;
   /* width: 100vw; */
-  height: 80px;
+  height: 70px;
   /* height: 30px; */
   justify-content: space-between;
   color: rgb(192, 191, 191);
@@ -73,7 +73,8 @@ footer {
   margin-bottom: 60px;
 }
 
-.title {
+
+.color-picker {
   padding-top: 10px;
   font-size: 50px;
   font-family: 'Concert One', cursive;
@@ -99,49 +100,94 @@ footer {
   /* background-color: gray; */
 }
 
-#tooltip {
-  position: relative;
-  display: inline-block;
-  /* border-bottom: 1px dotted black; */
-}
-#tooltip .tooltiptext {
-  display: none;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
+
+
+.modal {
+  position: fixed;
+  top: 50%;
   left: 50%;
-  margin-left: -200px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(192, 191, 191);
+  margin-right: 20px;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  color: #000000;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-content {
+  padding: 10px 15px;
+  color: #000000;
+}
+
+#overlay {
+  position: fixed;
   opacity: 0;
-  transition: opacity 0.3s;
-  font-size: large;
-  width: 300px;
-  /* min-width: 250px; */
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
 }
 
-#tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-#tooltip:hover .tooltiptext {
-  display: block;
+#overlay.active {
   opacity: 1;
+  pointer-events: all;
 }
 
 
-main p canvas {
-  border: 1px solid white;
-  
+
+.canvas-box {
+  padding: 20px;
+  background-color: rgb(92, 91, 91);
+  /* border: 2px solid rgb(92, 91, 91); */
+  margin-right: 20px;
+}
+
+.canvas-box > canvas {
+  border: 2px solid white;
 }
 
 .selected {

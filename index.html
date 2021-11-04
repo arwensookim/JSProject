@@ -23,7 +23,7 @@
       <div class="main-nav">
         <div class="left-nav">
           <div class="dropdown">
-            <i class="fas fa-bars fa-2x"></i>
+            <i class="fas fa-bars fa-4x"></i>
             <div class="dropdown-content">
               <a href="https://github.com/arwensookim" target="_blank"><i class="fab fa-github fa-2x"></i>github</a>
               <a href="https://www.linkedin.com/in/arwen-kim-85a01b221/" target="_blank"><i class="fab fa-linkedin fa-2x"></i>linkedin</a>
@@ -31,24 +31,44 @@
             </div>
           </div>
         </div>
-        <div class="title">
-          Color Picker
+        <div class="color-picker">
+          <i class="fas fa-eye-dropper"></i> Color Picker
         </div>
       
         <div class="right-nav">
-          <ul>
-            <i class="fas fa-info-circle fa-2x" id="tooltip">
-              <span class="tooltiptext">Upload your picture and get color information from your picture!</span>
-            </i>
-          </ul>
+          <!-- <button data-modal-target="#modal" class="modal-btn" ><i class="fas fa-info-circle fa-4x" id="tooltip"></i></button>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">Tool Tip</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-content">
+              "Upload your picture and get color information from your picture!
+              You can get color code from the color graph too!"
+            </div>
+          </div>
+          <div id="overlay"></div> -->
+          <button class="btn" data-modal-target="#modal"><i class="fas fa-info-circle fa-4x" ></i></button>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">Tool Tip</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-content">
+              "Upload your picture and get color information from your picture!
+              You can get color code from the color graph too!"
+            </div>
+          </div>
+          <div id="overlay"></div>
+
+
         </div>
       </div>
 
   <main>
     <div class="mains">
       <br>
-        <!-- <span class="box" id="pixelColor" data-label="Current Pixel"></span> -->
-        <!-- images are from pexels.com -->
+    
  
         <div class="container">
           <div class="canvas-box">
@@ -83,6 +103,7 @@
     </div>
 
     </main>
+
     <script>
       const loadfile = function(event) {
         let imgTag = document.querySelector('main canvas');
@@ -93,7 +114,7 @@
     </script>
     <script src="main.js" defer></script>
     <script src="colorSpectrum.js" defer></script>
-
+    <!-- <script src="modalScript.js" defer></script> -->
   </body>
 
 </html>
