@@ -252,7 +252,12 @@ footer {
   width: 900px;
 }
 
-
+.upload {
+  display: flex;
+  /* justify-content: flex-start; */
+  width: 1160px;
+  justify-content: center;
+}
 
 input[type=file]::file-selector-button {
   border: 1px solid white;
@@ -271,7 +276,10 @@ input[type=file]::file-selector-button:hover {
 
 .file-upload {
   padding-top: 10px;
-  align-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+
 }
 
 .red-text {

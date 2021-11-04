@@ -36,18 +36,6 @@
         </div>
       
         <div class="right-nav">
-          <!-- <button data-modal-target="#modal" class="modal-btn" ><i class="fas fa-info-circle fa-4x" id="tooltip"></i></button>
-          <div class="modal" id="modal">
-            <div class="modal-header">
-              <div class="title">Tool Tip</div>
-              <button data-close-button class="close-button">&times;</button>
-            </div>
-            <div class="modal-content">
-              "Upload your picture and get color information from your picture!
-              You can get color code from the color graph too!"
-            </div>
-          </div>
-          <div id="overlay"></div> -->
           <button class="btn" data-modal-target="#modal"><i class="fas fa-info-circle fa-4x" ></i></button>
           <div class="modal" id="modal">
             <div class="modal-header">
@@ -66,20 +54,15 @@
           </div>
           <div id="overlay"></div>
 
-
         </div>
       </div>
 
   <main>
     <div class="mains">
-      <br>
-    
- 
         <div class="container">
           <div class="canvas-box">
             <canvas data-src="./img/img1.png" width="900"></canvas>
           </div>
-
           <div class="spectrum-wrapper">
             <!-- <input type="color" id="color" ></input> -->
             <div class="spectrum-layer"></div>
@@ -93,13 +76,14 @@
             </div>
           </div>
         </div>
+        <div class="upload">
+          <form class="file-upload" method="post" enctype="multipart/form-data">
+            <input class="file-upload" type="file" id ="filename" onchange="loadfile(event)">
+          </form>
+          <div class="space">
 
-      </br>
-      <div class="upload">
-        <form class="file-upload" method="post" enctype="multipart/form-data">
-          <input class="file-upload" type="file" id ="filename" onchange="loadfile(event)">
-        </form>
-      </div>
+          </div>
+        </div>
 
       <section class="colors">
         <!-- saved colours here -->
@@ -119,7 +103,6 @@
     </script>
     <script src="main.js" defer></script>
     <script src="colorSpectrum.js" defer></script>
-    <!-- <script src="modalScript.js" defer></script> -->
   </body>
 
 </html>

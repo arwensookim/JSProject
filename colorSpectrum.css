@@ -1,7 +1,6 @@
 
 .spectrum-wrapper {
   cursor: crosshair;
-  width: 120px;
   position: relative;
   height: 500px;
   user-select: none;
