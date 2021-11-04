@@ -13,9 +13,10 @@ Once you upload the picture, you can click the spot/pixel to get specific code f
 ## **Functionality & MVPs**
 
 In **Color Code Extraction**, users will be able to:
-- upload picture
-- can click to get color code of specific pixel
+- can upload picture
+- can click picture to get color code of specific pixel
 - can see exact color for pixel, and average color for the pixel
+- have color graph for more color code information
 
 
 In addition, this project will include:

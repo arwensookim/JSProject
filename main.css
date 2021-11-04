@@ -257,10 +257,11 @@ footer {
 input[type=file]::file-selector-button {
   border: 1px solid white;
   padding: .2em .4em;
-  border-radius: .2em;
+  border-radius: 10px;
   background-color: rgb(107, 106, 106);
   transition: ls;
   width: 150px;
+  height: 40px;
   color: white;
 }
 
