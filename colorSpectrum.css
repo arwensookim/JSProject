@@ -6,9 +6,10 @@
   height: 500px;
   user-select: none;
   /* user-drag: none; */
-  /* outline: 1px solid rgb(66, 66, 66); */
-  min-width: 120px;
+  /* outline: 2px solid rgb(66, 66, 66); */
+  min-width: 150px;
   margin-left: 50px;
+  /* border: 2px sold black; */
 }
 .spectrum-layer {
   height: 100%;
@@ -50,11 +51,33 @@
 }
 
 .info {
- /* position: absolute; */
+
+ margin-top: 20px;
  top: 0;
  bottom: 0;
  right: 0;
  left: 0;
  color: black;
- font-size: small;
+ /* font-size: small; */
+ font-family: 'Concert One', cursive;
 }
+
+.info > .red {
+  color: red;
+  font-size: 20px;
+}
+
+.info > .green {
+  color: green;
+  font-size: 20px;
+}
+
+.info > .blue {
+  color: blue;
+  font-size: 20px;
+}
+
+.info > .hex {
+  font-size: 20px;
+}
+
