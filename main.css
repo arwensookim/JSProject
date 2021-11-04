@@ -144,6 +144,7 @@ footer {
 .modal-header .title {
   font-size: 1.25rem;
   font-weight: bold;
+  font-family: 'Concert One', cursive;
 }
 
 .modal-header .close-button {
@@ -152,12 +153,14 @@ footer {
   outline: none;
   background: none;
   font-size: 1.25rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .modal-content {
   padding: 10px 15px;
   color: #000000;
+  font-family: 'Concert One', cursive;
+  font-weight: lighter;
 }
 
 #overlay {
@@ -270,4 +273,11 @@ input[type=file]::file-selector-button:hover {
   align-content: flex-start;
 }
 
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
 
