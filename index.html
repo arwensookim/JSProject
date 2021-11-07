@@ -83,7 +83,8 @@
             <input class="file-upload" type="file" id ="filename" onchange="loadfile(event)">
           </form>
           <div class="remove-btn">
-            <button onclick="clearAllBox(event)">Remove Color Boxes</button>
+            <button onclick="clearAllBox(event)">Remove All Colors</button>
+            <button onclick="clearBox(event)">Remove one color</button>
           </div>
 
         </div>
@@ -97,12 +98,12 @@
     </main>
 
     <script>
-      // const clearBox = function(event) {
-      //   let colors = document.querySelector('.colors');
-      //   let pixel = document.querySelector('.box');
+      const clearBox = function(event) {
+        let colors = document.querySelector('.colors');
+        let pixel = document.querySelector('.box');
 
-      //   colors.removeChild(pixel);
-      // }
+        colors.removeChild(pixel);
+      }
 
       const clearAllBox = function(event) {
         let colors = document.querySelector('.colors');
