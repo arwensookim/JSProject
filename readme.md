@@ -1,4 +1,4 @@
-# JavaScript Project - Color Code Extraction
+# Color Picker
 
 ---
 Click [here](https://arwensookim.github.io/color-picker/) for live demo
