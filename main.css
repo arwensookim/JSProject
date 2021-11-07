@@ -259,6 +259,30 @@ footer {
   justify-content: center;
 }
 
+.remove-btn {
+  display: flex;
+  width: 1160px;
+  justify-content: flex-end;
+  height: 50px;  
+  /* padding: .2em .4em; */
+  margin-top: 10px;
+}
+.remove-btn > button {
+  border-radius: 10px;
+  /* padding-top: 10px; */
+  transition: ls;
+  align-content: flex-end;
+  margin-top: 10px;
+  text-align: center;
+  background-color: rgb(35, 35, 36);
+  color: white;
+  width: 200px;
+}
+
+.remove-btn > button:hover {
+  background-color: rgb(92, 91, 91);
+}
+
 input[type=file]::file-selector-button {
   border: 1px solid white;
   padding: .2em .4em;

@@ -80,11 +80,12 @@
           <form class="file-upload" method="post" enctype="multipart/form-data">
             <input class="file-upload" type="file" id ="filename" onchange="loadfile(event)">
           </form>
-          <div class="space">
-
+          <div class="remove-btn">
+            <button onclick="clearAllBox(event)">Remove Color Boxes</button>
           </div>
-        </div>
 
+        </div>
+        
       <section class="colors">
         <!-- saved colours here -->
       </section>
@@ -93,6 +94,23 @@
 
     </main>
 
+    <script>
+      // const clearBox = function(event) {
+      //   let colors = document.querySelector('.colors');
+      //   let pixel = document.querySelector('.box');
+
+      //   colors.removeChild(pixel);
+      // }
+
+      const clearAllBox = function(event) {
+        let colors = document.querySelector('.colors');
+
+        while (colors.firstChild) {
+          colors.removeChild(colors.lastChild);
+        }
+
+      }
+    </script>
     <script>
       const loadfile = function(event) {
         let imgTag = document.querySelector('main canvas');

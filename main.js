@@ -150,7 +150,15 @@ const APP = {
   
   },
 
-  
+  clearBox(ev) {
+
+    let colors = document.querySelector('.colors');
+    let pixel = document.querySelector('.box');
+
+    colors.removeChild(pixel);
+
+  },
+
 
   manipulate() {
     let selectedPixel = APP.ctx.getImageData(0,0, APP.canvas.width, APP.canvas.height)
