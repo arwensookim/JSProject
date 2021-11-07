@@ -8,6 +8,9 @@ Click [here](https://arwensookim.github.io/color-picker/) for live demo
 This will help you to get color code from pictures you uploaded.
 Once you upload the picture, you can click the spot/pixel to get specific code for corresponding color.
 
+## **Color Picker**
+
+<img width="800" alt="homepage" src="img/homepage.png">
 
 
 ## **Functionality & MVPs**
@@ -38,6 +41,22 @@ In addition, this project will include:
 * `canvas` to draw image
 * `html`, `css`, `JavaScript`, `rgb`
 
+
+## **Feature**
+User can upload picture and get average and exect pixel of color code.
+Once user click the pixel of picture, color box will added bottom of the picture. Remove button will either **remove all boxes** that were added, or user can remove **only one last** color box.
+
+```Javascript
+getPixel(ev) {
+    let cols = APP.canvas.width;
+    let { offsetX, offsetY } = ev;
+    let c = APP.getPixelColor(cols, offsetY, offsetX);
+    let clr = `rgb(${c.red}, ${c.green}, ${c.blue})`; 
+
+    APP.pixel = clr;
+    APP.getAverage(ev);
+  }
+  ```
 
 
 ## **Implementation Timeline**

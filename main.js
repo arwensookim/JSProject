@@ -82,6 +82,7 @@ const APP = {
     APP.pixel = clr;
     APP.getAverage(ev);
   },
+  
   getAverage(ev) {
 
 
@@ -121,6 +122,7 @@ const APP = {
     APP.ctx.strokeRect(offsetX - inset, offsetY - inset, 30, 30);
     APP.ctx.fillRect(offsetX - inset, offsetY - inset, 30, 30);
   },
+
   getPixelColor(cols, x, y) {
     let pixel = cols * x + y;
     let arrayPos = pixel * 4;
