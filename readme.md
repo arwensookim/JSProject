@@ -44,7 +44,7 @@ In addition, this project will include:
 
 ## **Feature**
 User can upload picture and get average and exect pixel of color code.
-Once user click the pixel of picture, color box will added bottom of the picture. Remove button will either **remove all boxes** that were added, or user can remove **only one last** color box.
+Once user click the pixel of picture, color box will added bottom of the picture. Remove button will either **remove all boxes** that were added, or user can remove **only one** color box.
 
 ```Javascript
 getPixel(ev) {
